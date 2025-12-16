@@ -59,7 +59,6 @@ function EducationInput({
     deleteEducation,
     index
 }) {
-//   const { formData, updateField } = useForm(); // not using
   const updateField = (field, value) => {
     const updated = educations.map(e =>
         e.id === edu.id ? {...e, [field]: value} : e
@@ -69,7 +68,6 @@ function EducationInput({
   
     return (
       <div>
-        {/* <h2>Education</h2> */}
         <div style={{display: "flex", justifyContent: "space-between", alignItems: "center"}}>
             <h3>Education {index + 1}</h3>
             <button

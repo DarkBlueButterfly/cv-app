@@ -134,3 +134,18 @@ textarea {
     background-color: #f9f9f9;
   }
 }
+
+@media print {
+  .no-print {
+    display: none;
+  }
+  .preview {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    display: block;
+    /* align-items: stretch !important; */
+  }
+}
+

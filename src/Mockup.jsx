@@ -12,7 +12,7 @@ export default function Preview({ educations, experiences, skillsData }) {
 
     return (
         <div className="mockup-view" style={{width: "100%"}}>
-            <h2>Preview</h2>
+            <h2 className="no-print">Preview</h2>
             <div className="preview">
                 <h1 style={{textAlign: "center"}}>{formData.name || 'Name'}</h1>
                 

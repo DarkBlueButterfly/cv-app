@@ -1,3 +1,21 @@
+// CV header
+export const CVHeader = ({ title, onClick }) => {
+    return (
+        <>
+            <div style={{display: "flex", justifyContent: "space-around", alignItems: 'center'}}>
+                <h1>{title}</h1>
+                <button 
+                    style={{background: "#535bf2"}}
+                    onClick={onClick}
+                >
+                    Download PDF
+                </button>
+            </div>
+            <hr />
+        </>
+    )
+}
+
 // form layout
 
 export const SectionContainer = ({children}) => {

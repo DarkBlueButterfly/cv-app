@@ -1,12 +1,11 @@
 import { useState } from 'react'
 import { FormProvider } from './contexts/FormContext';
-import { SectionContainer, TitleHead } from './components/Layout';
+import { CVHeader, SectionContainer, TitleHead } from './components/Layout';
 import Personal from './components/Personal';
 import Education from './components/Education';
 import SkillSection from './components/Skills';
 import ExperienceForm from './components/Experience';
 import Preview from './Mockup';
-// import './App.css'
 
 function App() {
   const [experiences, setExperiences] = useState([
@@ -41,8 +40,14 @@ function App() {
 
   return (
     <FormProvider>
+      <div className='no-print'>
+        <CVHeader 
+          title={"CV Creator"}
+          onClick={() => (window.print())}
+        />
+      </div>
       <div className='main'>
-        <div>
+        <div className='no-print'>
           <SectionContainer>
             <Personal />
           </SectionContainer>
