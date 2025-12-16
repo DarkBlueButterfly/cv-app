@@ -121,7 +121,6 @@ textarea {
   padding: 2.5rem;
 }
 
-
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -148,4 +147,3 @@ textarea {
     /* align-items: stretch !important; */
   }
 }
-
