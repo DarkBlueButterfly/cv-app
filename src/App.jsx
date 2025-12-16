@@ -38,7 +38,10 @@ function App() {
 
   return (
     <FormProvider>
-      <div className="no-print">
+      <div
+        className="no-print"
+        style={{ position: "sticky", top: "0", zIndex: "1000" }}
+      >
         <CVHeader title={"CV Creator"} onClick={() => window.print()} />
       </div>
       <div className="main">
