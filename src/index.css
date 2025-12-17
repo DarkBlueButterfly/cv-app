@@ -38,7 +38,6 @@ body {
 
 h1 {
   font-size: 3.2em;
-  /* line-height: 1.1; */
 }
 
 button {
@@ -119,6 +118,10 @@ textarea {
 .preview {
   background-color: #646cff;
   padding: 2.5rem;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: scroll;
 }
 
 @media (prefers-color-scheme: light) {
@@ -144,6 +147,11 @@ textarea {
     padding: 0;
     text-align: left;
     display: block;
-    /* align-items: stretch !important; */
+    position: static;
+    height: auto;
+  }
+
+  .preview::-webkit-scrollbar {
+    display: none;
   }
 }
